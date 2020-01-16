@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true">
+    <inset android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:insetTop="5dp" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:topLeftRadius="20sp" android:topRightRadius="20sp" />
+            <gradient
+                android:startColor="#A64141"
+                android:centerColor="#802121"
+                android:endColor="#751212"
+                android:centerX="10%"
+                android:angle="270" />
+        </shape>
+    </inset>
+    </item>
+    <item android:state_selected="true">
+    <inset android:insetLeft="5dp"
+        android:insetRight="5dp"
+        android:insetTop="5dp" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:topLeftRadius="20sp" android:topRightRadius="20sp" />
+            <gradient
+                android:startColor="#D15353"
+                android:centerColor="#AE2F2F"
+                android:endColor="#911818"
+                android:centerX="10%"
+                android:angle="270" />
+        </shape>
+    </inset>
+    </item>
+    <item >
+        <inset android:insetLeft="5dp"
+            android:insetRight="5dp"
+            android:insetTop="5dp" >
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:topLeftRadius="20sp" android:topRightRadius="20sp" />
+            <gradient
+                android:startColor="#FF6565"
+                android:centerColor="#EC3E3E"
+                android:endColor="#D12121"
+                android:centerX="10%"
+                android:angle="270" />
+        </shape>
+        </inset>
+    </item>
+</selector>
+

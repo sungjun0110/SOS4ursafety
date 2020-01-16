@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <Button
+        android:id="@+id/SendBtn"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/gradient_sendbtn"
+        android:text="Send"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/SOSBtn"
+        android:layout_width="310dp"
+        android:layout_height="150dp"
+        android:background="@drawable/gradient"
+        android:textOff="SOS"
+        android:textOn="SOS"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/SendBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/flashPowerBtn"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/gradient_flashpowerbtn"
+        android:textOff="Flash"
+        android:textOn="Flash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MorseBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SendBtn"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <ToggleButton
+        android:id="@+id/FlashBtn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient_regularflashbtn"
+        android:text="ToggleButton"
+        android:textOff="Normal"
+        android:textOn="Normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/MorseBtn"
+        app:layout_constraintTop_toBottomOf="@+id/SendBtn"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ToggleButton
+        android:id="@+id/MorseBtn"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/gradient_morsebtn"
+        android:text="ToggleButton"
+        android:textOff="Morse"
+        android:textOn="Morse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/flashPowerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/SendBtn"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactsView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/gradient_flashpowerbtn"
+        android:text="ADD"
+        app:layout_constraintBottom_toTopOf="@+id/SOSBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactsView"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Press ADD button below \nto add contacts"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/contactsView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/contactsView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

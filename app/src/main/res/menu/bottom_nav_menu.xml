@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/icons8_high_importance_50"
+        android:title="@string/title_home" />
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_send"-->
+<!--        android:icon="@drawable/icons8_sos_50"-->
+<!--        android:title="@string/title_send" />-->
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/icons8_more_50"
+        android:title="@string/title_settings" />
+
+</menu>

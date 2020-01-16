@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contact_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:text="test"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="number"
+            android:textSize="12sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="30dp"
+            android:layout_alignTop="@+id/name"/>
+
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/smallSendBtn"
+            android:background="@drawable/gradient_smalldeletebtn"
+            android:text="delete" />
+
+        <Button
+            android:id="@+id/smallSendBtn"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/gradient_smallsendbtn"
+            android:text="@string/send" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
